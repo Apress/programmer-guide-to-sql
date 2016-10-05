@@ -1,0 +1,1 @@
+SELECT StudentID, ExamID, Mark * IfPassed AS MarkIfPassed FROM StudentExam;

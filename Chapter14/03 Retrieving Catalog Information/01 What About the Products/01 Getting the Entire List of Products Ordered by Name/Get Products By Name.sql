@@ -1,0 +1,1 @@
+SELECT Name, Description FROM Product ORDER BY Name;

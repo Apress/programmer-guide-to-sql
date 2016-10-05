@@ -1,0 +1,4 @@
+SELECT Name, Price
+FROM Product
+ORDER BY Price DESC, Name ASC
+FETCH FIRST 5 ROWS ONLY;

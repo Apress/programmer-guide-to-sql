@@ -1,0 +1,3 @@
+CREATE FUNCTION FormatName
+RETURNS STRING
+SONAME 'C:\\MySQL\\lib\\MySQLFunction.dll';

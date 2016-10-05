@@ -1,0 +1,124 @@
+INSERT INTO Course (CourseID,Name,Credits) VALUES (1,'Mediaeval Romanian',5);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (2,'Philosophy',5);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (3,'History of Computing',5);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (4,'Organic Chemistry',5);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (5,'Applied Mathmatics',5);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (6,'Electronics',5);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (7,'Human Biology',5);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (8,'Core Mathmatics',10);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (9,'Modern English Literature',5);
+INSERT INTO Course (CourseID,Name,Credits) VALUES (10,'Metallurgy',5);
+
+INSERT INTO Student (StudentID,Name) VALUES (1,'John Jones');
+INSERT INTO Student (StudentID,Name) VALUES (2,'Gary Burton');
+INSERT INTO Student (StudentID,Name) VALUES (3,'Emily Scarlett');
+INSERT INTO Student (StudentID,Name) VALUES (4,'Bruce Lee');
+INSERT INTO Student (StudentID,Name) VALUES (5,'Anna Wolff');
+INSERT INTO Student (StudentID,Name) VALUES (6,'Vic Andrews');
+INSERT INTO Student (StudentID,Name) VALUES (7,'Steve Alaska');
+INSERT INTO Student (StudentID,Name) VALUES (8,'Julia Picard');
+INSERT INTO Student (StudentID,Name) VALUES (9,'Andrew Foster');
+INSERT INTO Student (StudentID,Name) VALUES (10,'Maria Fernandez');
+INSERT INTO Student (StudentID,Name) VALUES (11,'Mohammed Akbar');
+INSERT INTO Student (StudentID,Name) VALUES (12,'Isabelle Jonsson');
+
+INSERT INTO Professor (ProfessorID,Name) VALUES (1,'Prof. Dawson');
+INSERT INTO Professor (ProfessorID,Name) VALUES (2,'Prof. Williams');
+INSERT INTO Professor (ProfessorID,Name) VALUES (3,'Prof. Ashby');
+INSERT INTO Professor (ProfessorID,Name) VALUES (4,'Prof. Patel');
+INSERT INTO Professor (ProfessorID,Name) VALUES (5,'Prof. Jones');
+INSERT INTO Professor (ProfessorID,Name) VALUES (6,'Prof. Hwa');
+
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (1,'Main hall',500);
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (2,'Science Department',200);
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (3,'Science Room 1',100);
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (4,'Languages Block',300);
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (5,'Languages Room 1',75);
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (6,'Languages Room 2',50);
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (7,'Engineering Center',200);
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (8,'Engineering Room 1',100);
+INSERT INTO Room (RoomID,Comments,Capacity) VALUES (9,'Engineering Room 2',50);
+
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (1,1,1,DATE '2003-03-12','A difficult test that should last an hour');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (2,2,1,DATE '2003-03-13','A simple two hour test');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (3,3,2,DATE '2003-03-11','1 hour long');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn) VALUES (4,4,3,DATE '2003-03-18');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (5,5,2,DATE '2003-03-19','2 hours long');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn) VALUES (6,6,3,DATE '2003-03-25');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (7,7,4,DATE '2003-03-26','They''ll enjoy this one');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (8,8,5,DATE '2003-03-10','Part one of the test should be two hours long');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (9,9,1,DATE '2003-03-21','Two hours long. They might find it tricky');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (10,10,6,DATE '2003-03-26','2hr test');
+INSERT INTO Exam (ExamID,CourseID,ProfessorID,SustainedOn,Comments) VALUES (11,8,5,DATE '2003-03-24','Part two should be an hour and a half long');
+
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (1,1,55,1,'Satisfactory');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (1,2,73,1,'Good result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (2,3,44,1,'Scraped through');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (2,5,39,0,'Failed, and will need to retake this one later in the year');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed) VALUES (2,6,63,1);
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (3,4,78,1,'Excellent result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (3,7,82,1,'Great result!');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (4,8,65,1,'Adequate performance');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (4,11,72,1,'Good result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (4,5,53,1,'Below expectations');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (5,1,26,0,'Very poor performance. Recommend this student drop this module');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (5,9,68,1,'Good result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (5,2,62,1,'Good result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (6,3,78,1,'Excellent work');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed) VALUES (6,6,69,1);
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (6,10,58,1,'Adequate performance');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (7,8,62,1,'Adequate performance');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (7,11,68,1,'Good result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (7,6,84,1,'Excellent work');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (8,1,71,1,'Excellent, great work!');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (8,3,46,1,'Poor result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (8,9,38,0,'Fail - will need to be retaken');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed) VALUES (9,4,70,1);
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (9,7,69,1,'Good work');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (9,10,67,1,'Good work');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (10,8,74,1,'Good result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (10,11,76,1,'Good result');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (10,5,65,1,'Adequate work here');
+INSERT INTO StudentExam (StudentID,ExamID,Mark,IfPassed,Comments) VALUES (10,6,79,1,'Excellent result');
+
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (1,1,1,6,'Mon 09:00-11:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (2,2,1,5,'Mon 11:00-12:00, Thu 09:00-11:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (3,3,2,3,'Mon 14:00-16:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (4,4,3,2,'Tue 10:00-12:00, Thu 14:00-15:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (5,5,2,9,'Tue 14:00-16:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (6,6,3,2,'Tue 16:00-17:00, Thu 15:00-17:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (7,7,4,3,'Wed 09:00-11:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (8,8,5,8,'Wed 11:00-13:00, Fri 09:00-11:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (9,9,1,5,'Fri 11:00-13:00');
+INSERT INTO Class (ClassID,CourseID,ProfessorID,RoomID,Time) VALUES (10,10,6,9,'Fri 14:00-16:00');
+
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (1,1,1,DATE '2002-09-23',62);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (2,1,2,DATE '2002-09-30',70);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (3,2,3,DATE '2003-09-23',51);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (4,2,5,DATE '2003-09-23',41);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (5,2,6,DATE '2003-09-23',68);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (6,3,4,DATE '2002-09-30',78);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (7,3,7,DATE '2002-09-30',80);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (8,4,8,DATE '2002-09-20',70);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (9,4,5,DATE '2002-09-20',60);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (10,5,1,DATE '2002-09-23',33);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (11,5,9,DATE '2002-09-23',65);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (12,5,2,DATE '2002-09-23',63);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (13,6,3,DATE '2002-09-23',78);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (14,6,6,DATE '2002-09-23',71);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (15,6,10,DATE '2002-09-23',54);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (16,7,8,DATE '2002-09-20',66);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (17,7,6,DATE '2002-09-20',82);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (18,8,1,DATE '2002-09-23',70);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (19,8,3,DATE '2002-09-23',53);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (20,8,9,DATE '2002-09-30',42);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (21,9,4,DATE '2002-09-23',68);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (22,9,7,DATE '2002-09-23',66);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (23,9,10,DATE '2002-09-30',68);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (24,10,8,DATE '2002-09-20',75);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (25,10,5,DATE '2002-09-20',66);
+INSERT INTO Enrollment (EnrollmentID,StudentID,ClassID,EnrolledOn,Grade) VALUES (26,10,6,DATE '2002-09-20',76);
+
+
+
+

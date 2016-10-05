@@ -1,0 +1,7 @@
+SELECT ProductID, Name FROM
+(
+SELECT RANK() OVER (ORDER BY ProductID) As Ranking, ProductID, Name
+FROM Product
+ORDER BY PRODUCTID
+)
+WHERE Ranking BETWEEN 6 AND 10;

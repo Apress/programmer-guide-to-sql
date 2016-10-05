@@ -1,0 +1,1 @@
+EXECUTE InsertStudent 500, ‘Víteslav Novák’;

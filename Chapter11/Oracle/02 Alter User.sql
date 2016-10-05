@@ -1,0 +1,1 @@
+ALTER USER Alice IDENTIFIED BY complicatedpassword;

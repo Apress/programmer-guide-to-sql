@@ -1,0 +1,7 @@
+CREATE TABLE Friend (
+   Name VARCHAR(50) NOT NULL,
+   PhoneNo VARCHAR(15),
+   CONSTRAINT unq_name UNIQUE(Name));
+
+ALTER TABLE Friend DROP CONSTRAINT unq_name;
+ALTER TABLE Friend ADD CONSTRAINT PK_FriendName PRIMARY KEY (Name);

@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX NameIndex ON Friend (Name);

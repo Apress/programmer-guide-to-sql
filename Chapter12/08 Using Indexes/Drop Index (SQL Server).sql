@@ -1,0 +1,1 @@
+DROP INDEX Friend.PhoneNoIndex;

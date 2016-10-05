@@ -1,0 +1,1 @@
+REVOKE DELETE, INSERT On Student FROM MyGroup;

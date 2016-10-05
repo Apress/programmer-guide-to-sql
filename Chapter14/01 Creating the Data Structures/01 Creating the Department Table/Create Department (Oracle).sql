@@ -1,0 +1,15 @@
+CREATE TABLE Department (
+DepartmentID INT NOT NULL PRIMARY KEY,
+Name VARCHAR(50) NOT NULL,
+Description VARCHAR(200) NULL);
+
+CREATE SEQUENCE DepartmentIDSeq;
+
+CREATE OR REPLACE TRIGGER DepartmentAutonumberTrigger
+BEFORE INSERT ON Department
+FOR EACH ROW
+BEGIN
+  SELECT DepartmentIDSeq.NEXTVAL
+  INTO :NEW.DepartmentID FROM DUAL;
+END;
+/

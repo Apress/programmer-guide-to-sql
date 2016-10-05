@@ -1,0 +1,21 @@
+CREATE TABLE UserRoles (
+UserId int NOT NULL ,
+RoleId int NOT NULL ,
+CanGrant bit NOT NULL
+);
+
+
+
+ALTER TABLE UserRoles
+ADD CONSTRAINT PK_UserRoles PRIMARY KEY (UserID, RoleID);
+
+
+ALTER TABLE UserRoles
+ADD CONSTRAINT FK_UserRoles_Roles FOREIGN KEY (RoleId)
+REFERENCES Roles (RoleId) ON DELETE CASCADE,
+CONSTRAINT FK_UserRoles_Users FOREIGN KEY
+(UserId) REFERENCES Users (UserId) ON DELETE CASCADE;
+
+
+ALTER TABLE UserRoles ADD
+CONSTRAINT DF_UserRoles_CanGrant DEFAULT (0) FOR CanGrant;

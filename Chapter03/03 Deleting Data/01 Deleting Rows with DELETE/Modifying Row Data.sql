@@ -1,0 +1,1 @@
+DELETE FROM Professor WHERE ProfessorID > 6;

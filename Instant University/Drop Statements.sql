@@ -1,0 +1,8 @@
+DROP TABLE StudentExam;
+DROP TABLE Enrollment;
+DROP TABLE Exam;
+DROP TABLE Student;
+DROP TABLE Class;
+DROP TABLE Room;
+DROP TABLE Course;
+DROP TABLE Professor;

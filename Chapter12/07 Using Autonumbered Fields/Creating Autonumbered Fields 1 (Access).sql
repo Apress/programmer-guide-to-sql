@@ -1,0 +1,4 @@
+CREATE TABLE Friend (
+   FriendID AUTOINCREMENT PRIMARY KEY NOT NULL,
+   Name     VARCHAR(50), 
+   PhoneNo  VARCHAR(15) DEFAULT 'Unknown Phone');

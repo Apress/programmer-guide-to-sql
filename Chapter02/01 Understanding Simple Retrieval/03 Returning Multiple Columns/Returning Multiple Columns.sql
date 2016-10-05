@@ -1,0 +1,1 @@
+SELECT StudentID, ExamID, Comments FROM StudentExam;

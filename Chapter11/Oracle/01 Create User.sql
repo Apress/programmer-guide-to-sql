@@ -1,0 +1,1 @@
+CREATE USER Alice IDENTIFIED BY simplepassword;

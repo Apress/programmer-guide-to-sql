@@ -1,0 +1,1 @@
+REVOKE DROP ON InstantUniversity.* FROM Alice@localhost;

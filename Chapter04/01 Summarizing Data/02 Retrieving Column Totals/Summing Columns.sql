@@ -1,0 +1,1 @@
+SELECT SUM(Credits) AS TotalCredits FROM Course;

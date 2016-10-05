@@ -1,0 +1,1 @@
+ALTER TABLE Friend DROP COLUMN PhoneNo;

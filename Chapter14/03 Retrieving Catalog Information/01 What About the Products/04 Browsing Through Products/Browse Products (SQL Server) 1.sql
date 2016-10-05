@@ -1,0 +1,6 @@
+SELECT ProductID, Name
+FROM Product AS P1
+WHERE 
+  (SELECT COUNT(*) FROM Product AS P2
+   WHERE P1.ProductID >= P2.ProductID) BETWEEN 6 AND 10
+ORDER BY ProductID;

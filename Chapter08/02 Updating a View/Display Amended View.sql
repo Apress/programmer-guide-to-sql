@@ -1,0 +1,1 @@
+SELECT ClassID, StudentID, Name, Role FROM ClassAttendees;

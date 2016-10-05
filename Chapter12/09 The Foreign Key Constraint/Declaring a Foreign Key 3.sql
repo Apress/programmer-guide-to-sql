@@ -1,0 +1,4 @@
+CREATE TABLE Phone (
+   PhoneID INT PRIMARY KEY NOT NULL,
+   FriendID INT FOREIGN KEY REFERENCES Friend(FriendID),
+   PhoneNo VARCHAR(20));

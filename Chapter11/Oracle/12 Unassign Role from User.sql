@@ -1,0 +1,1 @@
+REVOKE TestRole FROM Alice;

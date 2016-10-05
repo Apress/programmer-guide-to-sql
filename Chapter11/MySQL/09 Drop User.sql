@@ -1,0 +1,1 @@
+DELETE FROM mysql.user WHERE user='Alice' AND host='localhost';

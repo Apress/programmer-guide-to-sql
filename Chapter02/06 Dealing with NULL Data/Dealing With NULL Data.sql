@@ -1,0 +1,1 @@
+SELECT ExamID, CourseID, ProfessorID, SustainedOn FROM Exam WHERE Comments IS NULL;

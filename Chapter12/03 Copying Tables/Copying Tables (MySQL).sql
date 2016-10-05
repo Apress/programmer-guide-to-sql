@@ -1,0 +1,2 @@
+CREATE TABLE My_Friends SELECT * FROM Friend
+WHERE 1=0;

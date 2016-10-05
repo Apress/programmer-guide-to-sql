@@ -1,0 +1,1 @@
+REVOKE INSERT ON Student FROM Alice CASCADE;

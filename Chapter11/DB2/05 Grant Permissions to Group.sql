@@ -1,0 +1,1 @@
+GRANT SELECT, INSERT, DELETE ON Student TO MyGroup;

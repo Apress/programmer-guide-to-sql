@@ -1,0 +1,1 @@
+REVOKE DROP ON *.* FROM Alice@localhost;

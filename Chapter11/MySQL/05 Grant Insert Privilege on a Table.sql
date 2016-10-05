@@ -1,0 +1,1 @@
+GRANT INSERT ON InstantUniversity.Student TO Alice@localhost;

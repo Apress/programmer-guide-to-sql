@@ -1,0 +1,1 @@
+GRANT UPDATE ON Student TO TestRole;

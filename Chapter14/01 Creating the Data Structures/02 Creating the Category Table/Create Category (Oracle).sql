@@ -1,0 +1,17 @@
+CREATE TABLE Category (
+CategoryID INT NOT NULL PRIMARY KEY,
+DepartmentID INT NOT NULL,
+Name VARCHAR(50) NOT NULL,
+Description VARCHAR (200) NULL,
+FOREIGN KEY (DepartmentID) REFERENCES Department (DepartmentID));
+
+CREATE SEQUENCE CategoryIDSeq;
+
+CREATE OR REPLACE TRIGGER CategoryAutonumberTrigger 
+BEFORE INSERT ON Category
+FOR EACH ROW
+BEGIN
+   SELECT CategoryIDSeq.NEXTVAL
+   INTO :NEW.CategoryID FROM DUAL;
+END;
+/

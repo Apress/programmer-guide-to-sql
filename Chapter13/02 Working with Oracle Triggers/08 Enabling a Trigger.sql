@@ -1,0 +1,1 @@
+ALTER TRIGGER FriendAuditTrigger ENABLE;

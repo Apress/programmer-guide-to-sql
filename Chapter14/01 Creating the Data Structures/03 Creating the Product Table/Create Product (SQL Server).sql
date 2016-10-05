@@ -1,0 +1,8 @@
+CREATE TABLE Product (
+ProductID INT IDENTITY NOT NULL PRIMARY KEY,
+Name VARCHAR(50) NOT NULL,
+Description VARCHAR(1000) NOT NULL,
+Price MONEY NULL,
+ImagePath VARCHAR(50) NULL,
+OnCatalogPromotion BIT NULL,
+OnDepartmentPromotion BIT NULL);

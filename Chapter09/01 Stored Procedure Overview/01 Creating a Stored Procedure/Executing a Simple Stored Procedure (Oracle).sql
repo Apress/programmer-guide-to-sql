@@ -1,0 +1,1 @@
+CALL InsertStudent(500, 'Víteslav Novák');

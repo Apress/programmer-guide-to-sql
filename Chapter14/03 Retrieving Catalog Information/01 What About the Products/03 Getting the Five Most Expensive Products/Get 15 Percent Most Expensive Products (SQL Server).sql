@@ -1,0 +1,3 @@
+SELECT TOP 15 PERCENT Name, Price 
+FROM Product 
+ORDER BY Price DESC, Name ASC;

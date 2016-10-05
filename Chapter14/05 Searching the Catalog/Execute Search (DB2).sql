@@ -1,0 +1,1 @@
+CALL SearchCatalog(0, 'Devil', 'Mask', NULL, NULL, NULL)

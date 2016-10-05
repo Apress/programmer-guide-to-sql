@@ -1,0 +1,8 @@
+CREATE PROCEDURE GetStudents()
+RESULT SETS 1
+LANGUAGE SQL
+P1: BEGIN
+    DECLARE cur_Students CURSOR WITH RETURN FOR
+       SELECT StudentID, Name FROM Student;
+    OPEN cur_Students;
+END P1

@@ -1,0 +1,1 @@
+ALTER TABLE Friend ENABLE TRIGGER LogFriendTrigger;

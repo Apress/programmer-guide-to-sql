@@ -1,0 +1,6 @@
+CREATE TABLE Roles (
+RoleId int IDENTITY (1, 1) NOT NULL ,
+Description varchar (50) NOT NULL
+);
+ALTER TABLE Roles
+ADD CONSTRAINT PK_Roles PRIMARY KEY (RoleID);

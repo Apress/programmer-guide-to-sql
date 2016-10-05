@@ -1,0 +1,1 @@
+SELECT DISTINCT ExamID, SustainedOn FROM Exam;

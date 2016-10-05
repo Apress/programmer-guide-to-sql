@@ -1,0 +1,1 @@
+ALTER TABLE Friend ADD Address VARCHAR(50);

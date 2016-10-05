@@ -1,0 +1,2 @@
+USE TestDatabase
+GRANT CREATE TABLE TO Alice

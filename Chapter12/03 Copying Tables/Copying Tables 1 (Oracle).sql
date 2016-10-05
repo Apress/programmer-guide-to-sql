@@ -1,0 +1,1 @@
+CREATE TABLE My_Friends AS SELECT * FROM Friend;
